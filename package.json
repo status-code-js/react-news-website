@@ -1,6 +1,5 @@
 {
-  "homepage": "https://status-code-js.github.io/react-news-website/",
-  "name": "web-layout",
+  "name": "react-news-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
