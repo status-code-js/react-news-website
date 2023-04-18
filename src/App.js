@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import Header from './components/common/Header';
 import PostList from "./components/home/PostList";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter  as Router, Routes, Route } from 'react-router-dom';
 import Footer from "./components/common/Footer";
 import Post from "./components/home/Post";
 import {posts} from './data/newsData'

@@ -46,16 +46,16 @@ function Header() {
                       >
                           <div className="flex items-center gap-2.5 sm:gap-1 font-sans text-xs font-semibold">
                           <p href="">Impuls the Company & Its Products</p>
-                          <img src="./assets/triangle.svg" alt="Triangle Icon" style={{transform: `rotate(${arrowRotation}deg)`}}/>
+                          <img src={process.env.PUBLIC_URL + "/assets/triangle.svg"} alt="Triangle Icon" style={{transform: `rotate(${arrowRotation}deg)`}}/>
                           </div>
                       </Link>
                     <a className="font-metro text-xs font-normal sm:hidden ease-in-out duration-200 hover:opacity-80" href="">Get Access</a>
                 </div>
                  <div className="flex justify-between gap-1.5 items-center text-color1 text-sm hidden">
-                     <img src="./assets/flag-ru.png" alt="Russian Flag" className="w-5 h-3"/>
+                     <img src={process.env.PUBLIC_URL + "/assets/flag-ru.png"} alt="Russian Flag" className="w-5 h-3"/>
                      <a className="cursor-pointer flex justify-between gap-1.5 items-center" href="">
                          <p className="">RU</p>
-                         <img src="./assets/arrow.png" alt="Arrow Icon" className="w-1.5 h-1" />
+                         <img src={process.env.PUBLIC_URL + "/assets/arrow.png"} alt="Arrow Icon" className="w-1.5 h-1" />
                      </a>
                  </div>
              </div>
@@ -78,7 +78,7 @@ function Header() {
         <div className="flex justify-between items-center max-w-7xl m-0 m-auto px-4">
             <Link to="/">
             <div className="pt-4 pb-4">
-                <img src="./assets/Logo.svg" alt="Company Logo" className="w-44 h-9"/>
+                <img src={process.env.PUBLIC_URL + "/assets/Logo.svg"} alt="Company Logo" className="w-44 h-9"/>
             </div>
             </Link>
             <div className="font-plus text-base font-bold">
@@ -88,11 +88,11 @@ function Header() {
                     <li className="sm:hidden">
                         <a className="flex justify-between items-center gap-2 ease-in-out duration-200 hover:opacity-80">
                             <p>Impuls</p>
-                            <img src="./assets/icon-tv.png" alt="Impuls Tv Icon" className="w-3.5 h-2.5"/>
+                            <img src={process.env.PUBLIC_URL + "/assets/icon-tv.png"} alt="Impuls Tv Icon" className="w-3.5 h-2.5"/>
                         </a>
                     </li>
                     <li className="hidden sm:block"><button onClick={changeMenu}>
-                        <img src={`./assets/${showCrossIcon ? 'mobile-menu__cross.png' : 'mobile-menu__icon.svg'}`} alt="" className="w-7"/>
+                        <img src={`${process.env.PUBLIC_URL}/assets/${showCrossIcon ? 'mobile-menu__cross.png' : 'mobile-menu__icon.svg'}`} alt="" className="w-7"/>
                     </button></li>
                 </ul>
             </div>
