@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import BannerAdsSmall from "../common/BannerAdsSmall";
 import Button from "../common/Button";
-import { popular } from "../../data/newsData";
+import { popular } from "../../data/es/newsData";
 import { Link } from "react-router-dom";
 
 function Sidebar({ item }) {

@@ -1,13 +1,32 @@
 import React, {useState} from 'react'
 import {Link} from "react-router-dom";
+import { useTranslation } from 'react-i18next'
 
-function Header() {
+function Header(props) {
 
+    const { t, i18n } = useTranslation();
+    const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
     const [showMenu, setShowMenu] = useState(false)
     const [arrowRotation, setArrowRotation] = useState(0)
     const [showMobileMenu, setShowMobileMenu] = useState(false)
     const [showDesktopMenu, setShowDesktopMenu] = useState(false)
     const [showCrossIcon, setShowCrossIcon] = useState(false)
+
+    const toggleLanguage = () => {
+        let nextLanguage = '';
+        if (currentLanguage === 'es') {
+            nextLanguage = 'ru';
+        } else if (currentLanguage === 'ru') {
+            nextLanguage = 'en';
+        } else {
+            nextLanguage = 'es';
+        }
+        i18n.changeLanguage(nextLanguage);
+        setCurrentLanguage(nextLanguage);
+    }
+
+    const languageButtonText =
+        currentLanguage === 'es' ? 'ES' : currentLanguage.toUpperCase();
 
     const links = [
         {text: 'Finanzas & Leyes', url: '/finanzas'},
@@ -33,6 +52,8 @@ function Header() {
 
     const mobileMenuIconClass = `mobile-menu__icon ${showCrossIcon ? 'cross-icon' : ''}`;
 
+
+
   return (
     <div className="text-color1">
         <div className="bg-color2 pt-2 pb-2">
@@ -51,12 +72,12 @@ function Header() {
                       </Link>
                     <a className="font-metro text-xs font-normal sm:hidden ease-in-out duration-200 hover:opacity-80" href="">Get Access</a>
                 </div>
-                 <div className="flex justify-between gap-1.5 items-center text-color1 text-sm hidden">
-                     <img src={process.env.PUBLIC_URL + "/assets/flag-ru.png"} alt="Russian Flag" className="w-5 h-3"/>
-                     <a className="cursor-pointer flex justify-between gap-1.5 items-center" href="">
-                         <p className="">RU</p>
+                 <div className="flex justify-between gap-1.5 items-center text-color1 text-sm">
+                     <img src={process.env.PUBLIC_URL + "/assets/flag-ru.png"} alt="Russian Flag" className="hidden w-5 h-3"/>
+                     <button className="cursor-pointer flex justify-between gap-1.5 items-center" onClick={toggleLanguage}>
+                         <p className="">{languageButtonText}</p>
                          <img src={process.env.PUBLIC_URL + "/assets/arrow.png"} alt="Arrow Icon" className="w-1.5 h-1" />
-                     </a>
+                     </button>
                  </div>
              </div>
             </div>
@@ -65,7 +86,7 @@ function Header() {
                         <div className="bg-color2">
                             <div className="max-w-4xl m-0 m-auto px-4 top-9 grid grid-cols-3 sm:grid-cols-1 gap-4 p-6 text-center">
                             {links.map((link) => (
-                                <Link to={link.url} className="font-sans text-sm font-semibold leading-7 ease-in-out duration-200 hover:opacity-80" onClick={() => { setShowMenu(!showMenu)}}>
+                                <Link to={link.url} className="font-sans text-sm font-semibold leading-7 ease-in-out duration-200 hover:opacity-80" onClick={() => {setShowMenu(!showMenu)}}>
                                 {link.text}
                                 </Link>
                             ))}
@@ -107,4 +128,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Header;

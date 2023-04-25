@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {posts} from '../../data/newsData'
+import {posts} from '../../data/es/newsData'
 import BannerAds from "../common/BannerAds";
 import Sidebar from "./Sidebar";
 import HeroSectionList from "./sectionlists/HeroSectionList";
