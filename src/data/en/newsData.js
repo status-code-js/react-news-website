@@ -1,10 +1,23 @@
+
+export const enData = {
+    header: {
+        link1: "Impuls the Company & Its Products",
+        link2: "Get access",
+        menu: {
+            link1: "Map",
+            link2: "Advertising",
+            link3: "Impuls"
+        }
+    },
+}
+
 export const posts = [
     {
         id: 1,
         cover: "/assets/f-1.png",
-        category: "Finanzas & Leyes",
+        category: "Finance and Law",
         title: "Technology drives the decentralized finance revolution",
-        text: "La tecnología está impulsando un sistema financiero basado en “blockchain” que podría dejar fuera de juego a los delincuentes y especuladores en la sombra. Aún es un mercado de nicho, de cierto riesgo para inversores privados. Pero podemos crear entre todos un mundo mejor. El hundimiento reciente de la popular plataforma de intercambio de criptomonedas FTX ha intensificado una muy importante guerra política y económica por las finanzas descentralizadas, que viene arrastrándose desde hace años y aún tiene mucho recorrido por delante, porque los intereses en juego son colosales. Lo que nos estamos jugando es nada menos que la libertad financiera, obligando a la banca tradicional a reinventarse o desaparecer. También estamos cortando el paso al capitalismo salvaje que se ha instalado en un mundo financiero ponzoñoso, con una deriva que puede ser letal.",
+        text: "Technology is powering a blockchain-based financial system that could put criminals and shadow speculators out of business. It is still a niche market, with a certain risk for private investors. But together we can create a better world. The recent crash of the popular cryptocurrency exchange FTX has intensified a very important political and economic war over decentralized finance, which has been dragging on for years and still has a long way to go, because the stakes are colossal. What we are playing is nothing less than financial freedom, forcing traditional banking to reinvent itself or disappear. We are also cutting off wild capitalism that has settled in a poisonous financial world, with a drift that can be lethal.",
     },
     {
         id: 2,

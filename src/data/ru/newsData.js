@@ -1,10 +1,22 @@
+export const ruData = {
+    header: {
+        link1: "Компания Impuls и ее продукты",
+        link2: "Войти",
+        menu: {
+            link1: "Карта",
+            link2: "Реклама",
+            link3: "Impuls"
+        }
+    },
+}
+
 export const posts = [
     {
         id: 1,
         cover: "/assets/f-1.png",
-        category: "Finanzas & Leyes",
+        category: "Финансы и право",
         title: "Технологии стимулируют революцию в области децентрализованных финансов",
-        text: "La tecnología está impulsando un sistema financiero basado en “blockchain” que podría dejar fuera de juego a los delincuentes y especuladores en la sombra. Aún es un mercado de nicho, de cierto riesgo para inversores privados. Pero podemos crear entre todos un mundo mejor. El hundimiento reciente de la popular plataforma de intercambio de criptomonedas FTX ha intensificado una muy importante guerra política y económica por las finanzas descentralizadas, que viene arrastrándose desde hace años y aún tiene mucho recorrido por delante, porque los intereses en juego son colosales. Lo que nos estamos jugando es nada menos que la libertad financiera, obligando a la banca tradicional a reinventarse o desaparecer. También estamos cortando el paso al capitalismo salvaje que se ha instalado en un mundo financiero ponzoñoso, con una deriva que puede ser letal.",
+        text: "Технология обеспечивает финансовую систему на основе блокчейна, которая может вытеснить преступников и теневых спекулянтов из бизнеса. Это по-прежнему нишевый рынок с определенным риском для частных инвесторов. Но вместе мы можем создать лучший мир. Недавний крах популярной криптовалютной биржи FTX обострил очень важную политическую и экономическую войну за децентрализованные финансы, которая тянется годами и до которой еще далеко, ведь ставки колоссальны. То, что мы играем, — это не что иное, как финансовая свобода, заставляющая традиционные банковские услуги изобретать себя заново или исчезать. Мы также отсекаем дикий капитализм, осевший в ядовитом финансовом мире, с течением, которое может быть смертельным.",
     },
     {
         id: 2,

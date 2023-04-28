@@ -1,3 +1,15 @@
+export const esData = {
+    header: {
+        link1: "Empresa Impuls y sus productos",
+        link2: "Entrar",
+        menu: {
+            link1: "Mapa",
+            link2: "Promocional",
+            link3: "Impuls"
+}
+    },
+}
+
 export const posts = [
     {
         id: 1,

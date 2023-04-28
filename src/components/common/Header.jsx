@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 
 function Header(props) {
 
-    const { t, i18n } = useTranslation();
+    const { t, i18n } = useTranslation("translation");
     const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
     const [showMenu, setShowMenu] = useState(false)
     const [arrowRotation, setArrowRotation] = useState(0)
@@ -66,11 +66,11 @@ function Header(props) {
                       }} className="ease-in-out duration-200 hover:opacity-80"
                       >
                           <div className="flex items-center gap-2.5 sm:gap-1 font-sans text-xs font-semibold">
-                          <p href="">Impuls the Company & Its Products</p>
+                          <p href="">{t("header.link1")}</p>
                           <img src={process.env.PUBLIC_URL + "/assets/triangle.svg"} alt="Triangle Icon" style={{transform: `rotate(${arrowRotation}deg)`}}/>
                           </div>
                       </Link>
-                    <a className="font-metro text-xs font-normal sm:hidden ease-in-out duration-200 hover:opacity-80" href="">Get Access</a>
+                    <a className="font-metro text-xs font-normal sm:hidden ease-in-out duration-200 hover:opacity-80" href="">{t("header.link2")}</a>
                 </div>
                  <div className="flex justify-between gap-1.5 items-center text-color1 text-sm">
                      <img src={process.env.PUBLIC_URL + "/assets/flag-ru.png"} alt="Russian Flag" className="hidden w-5 h-3"/>
@@ -104,11 +104,11 @@ function Header(props) {
             </Link>
             <div className="font-plus text-base font-bold">
                 <ul className="flex flex-row justify-between items-center gap-11 font-plus">
-                    <li className="sm:hidden"><a className="ease-in-out duration-200 hover:opacity-80">Mapa</a></li>
-                    <li className="sm:hidden"><a className="ease-in-out duration-200 hover:opacity-80">Promocional</a></li>
+                    <li className="sm:hidden"><a className="ease-in-out duration-200 hover:opacity-80">{t("header.menu.link1")}</a></li>
+                    <li className="sm:hidden"><a className="ease-in-out duration-200 hover:opacity-80">{t("header.menu.link2")}</a></li>
                     <li className="sm:hidden">
                         <a className="flex justify-between items-center gap-2 ease-in-out duration-200 hover:opacity-80">
-                            <p>Impuls</p>
+                            <p>{t("header.menu.link3")}</p>
                             <img src={process.env.PUBLIC_URL + "/assets/icon-tv.png"} alt="Impuls Tv Icon" className="w-3.5 h-2.5"/>
                         </a>
                     </li>
@@ -119,13 +119,13 @@ function Header(props) {
             </div>
         </div>
         <ul style={{display: showMobileMenu ? 'block' : 'none'}} className="flex-col text-center leading-7 py-8">
-            <li><a>Mapa</a></li>
-            <li><a>Promocional</a></li>
-            <li><a>Impuls</a></li>
+            <li><a>{t("header.menu.link1")}</a></li>
+            <li><a>{t("header.menu.link2")}</a></li>
+            <li><a>{t("header.menu.link3")}</a></li>
         </ul>
     </div>
     </div>
-  )
-}
+      )
+    }
 
-export default Header;
+    export default Header;

@@ -7,8 +7,8 @@ import PostList from "./components/home/PostList";
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from "./components/common/Footer";
 import Post from "./components/home/Post";
-import { posts as spanishPosts } from './data/es/newsData';
-import { posts as englishPosts } from './data/en/newsData';
+import { esData } from './data/es/newsData';
+import { enData } from './data/en/newsData';
 
 function App() {
     const [currentLanguage, setCurrentLanguage] = useState('es');
@@ -18,7 +18,7 @@ function App() {
         setCurrentLanguage(lng);
     };
 
-    const posts = currentLanguage === 'es' ? spanishPosts : englishPosts;
+    const posts = currentLanguage === 'es' ? esData : enData;
 
     return (
         <I18nextProvider i18n={i18n}>
