@@ -9,6 +9,7 @@ import Footer from "./components/common/Footer";
 import Post from "./components/home/Post";
 import { esData } from './data/es/newsData';
 import { enData } from './data/en/newsData';
+import { ruData } from './data/ru/newsData';
 
 function App() {
     const [currentLanguage, setCurrentLanguage] = useState('es');
@@ -18,7 +19,13 @@ function App() {
         setCurrentLanguage(lng);
     };
 
-    const posts = currentLanguage === 'es' ? esData : enData;
+    const data = {
+        en: enData,
+        es: esData,
+        ru: ruData
+    };
+
+    const posts = data[currentLanguage];
 
     return (
         <I18nextProvider i18n={i18n}>
@@ -26,10 +33,10 @@ function App() {
                 <Router>
                     <Header currentLanguage={currentLanguage} changeLanguage={changeLanguage} />
                     <Routes>
-                        <Route path='/' element={<PostList posts={posts} />} />
+                        <Route path='/' element={<PostList posts={posts} currentLanguage={currentLanguage} changeLanguage={changeLanguage} />} />
                         <Route path='/post/:postId' element={<Post posts={posts} />} />
                     </Routes>
-                    <Footer />
+                    <Footer changeLanguage={changeLanguage} />
                 </Router>
             </div>
         </I18nextProvider>

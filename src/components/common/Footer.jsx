@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+    const { t } = useTranslation();
+
     return (
         <div>
             <div className="relative text-center sm:hidden">
@@ -10,9 +13,9 @@ const Footer = () => {
                 <div className="flex sm:flex-col gap-y-4 justify-between items-center text-xs text-color1 max-w-7xl m-0 m-auto">
                     <div className="flex flex-col">
                         <ul className="flex flex-row gap-2.5">
-                            <a className="ease-in-out duration-200 hover:opacity-80"><li>Terms of Service</li></a>
-                            <a className="ease-in-out duration-200 hover:opacity-80"><li>Manage Cookies</li></a>
-                            <a className="ease-in-out duration-200 hover:opacity-80"><li>Privacy Policy</li></a>
+                            <a className="ease-in-out duration-200 hover:opacity-80"><li>{t("footer.link1")}</li></a>
+                            <a className="ease-in-out duration-200 hover:opacity-80"><li>{t("footer.link2")}</li></a>
+                            <a className="ease-in-out duration-200 hover:opacity-80"><li>{t("footer.link3")}</li></a>
                         </ul>
                         <div>
                             <p className="leading-10">©2023 ImpulsPlus. All Rights Reserved</p>

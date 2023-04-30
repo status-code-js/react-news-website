@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-
+import { useTranslation } from 'react-i18next';
 
 const GastronomySection = ({ item, showImage, index }) => {
+    const { t } = useTranslation();
     return (
         <div className={`max-w-282 lg:max-w-sm border-b ${index < 3 && index > 0 ? 'border-color6' : 'border-hidden'} lg:border-hidden`}>
             <Link to={`/post/${item.id}`} className="ease-in-out duration-200 hover:opacity-80">

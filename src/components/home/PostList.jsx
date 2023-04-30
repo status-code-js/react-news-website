@@ -14,13 +14,15 @@ import FinanceSectionList from "./sectionlists/FinanceSectionList";
 import TrendsSectionList from "./sectionlists/TrendsSectionList";
 
 
-const PostList = () => {
+
+const PostList = ({ currentLanguage }) => {
 
     const [items, setItems] = useState([])
 
     useEffect(() => {
         setItems(posts)
     }, [])
+
 
 
     return (
