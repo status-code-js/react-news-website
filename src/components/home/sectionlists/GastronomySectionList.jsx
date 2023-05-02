@@ -1,7 +1,9 @@
 import React from 'react';
 import GastronomySection from "../sections/GastronomySection";
+import { useTranslation } from 'react-i18next';
 
-const GastronomySectionList = ({ items }) => {
+const GastronomySectionList = ({ items, currentLanguage, changeLanguage }) => {
+    const { t } = useTranslation();
     return (
         <div className="xl:max-w-4xl md:max-w-none xl:m-0 xl:m-auto lg:m-0 lg:m-auto md:m-0 md:m-auto">
             <div>
@@ -16,6 +18,8 @@ const GastronomySectionList = ({ items }) => {
                             item={items.filter(post => post.category === 'Gastronomía')[0]}
                             showImage={true}
                             index={0}
+                            currentLanguage={currentLanguage}
+                            changeLanguage={changeLanguage}
                         />
                     )}
                 </div>
@@ -30,6 +34,8 @@ const GastronomySectionList = ({ items }) => {
                                     item={post}
                                     showImage={false}
                                     index={index + 1}
+                                    currentLanguage={currentLanguage}
+                                    changeLanguage={changeLanguage}
                                 />
                             );
                         })}

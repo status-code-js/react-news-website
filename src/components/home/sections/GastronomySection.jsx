@@ -10,8 +10,8 @@ const GastronomySection = ({ item, showImage, index }) => {
                 {showImage && (
                     <img src={process.env.PUBLIC_URL + item.cover} alt={item.title} className="w-282 h-185 mb-4" />
                 )}
-                <h2 className="text-lg text-color5 leading-5 font-yeseva pb-2.5">{item.title}</h2>
-                <p className="text-xs md:text-left font-plus font-normal text-color5 line-clamp-5">{item.text}</p>
+                <h2 className="text-lg text-color5 leading-5 font-yeseva pb-2.5">{t(`main.posts.${item.id - 1}.title`)}</h2>
+                <p className="text-xs md:text-left font-plus font-normal text-color5 line-clamp-5">{t(`main.posts.${item.id - 1}.text`)}</p>
             </Link>
         </div>
     );

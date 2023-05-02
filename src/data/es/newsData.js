@@ -43,7 +43,7 @@ export const esData = {
                 cover: "/assets/s-1.png",
                 category: "Salud",
                 title: "Valencia se promociona como destino internacional de salud y bienestar",
-                text: "València ha creado la marca València Medical Destination, un programa destinado a posicionar la ciudad como destino de turismo de salud y bienestar. A través de esta iniciativa, llevada a cabo por la Fundación Visit València, entidad responsable de la promoción turística de la ciudad, se pretende dar visibilidad a la calidad de la oferta sanitaria y de bienestar y las ventajas que ofrece el destino para los pacientes que buscar tratarse fuera de su país. Además de ser el destino ideal por su importante ecosistema de empresas de biotecnología y servicios, València lo es por su climatología, por sus conexiones -la ciudad está conectada con 90 aeropuertos- y por su amplia oferta hotelera y de espacios para el bienestar y el entretenimiento. Esta urbe ofrece todas las ventajas de una gran ciudad, pero con un tamaño accesible y con precios competitivos, algo a tener muy en cuenta en caso de estancias medias o largas por motivos de tratamientos que requieran una permanencia prolongada.   El destino ofrece una dualidad perfecta para recibir tratamiento y hacer vida saludable. Es, además, epicentro de la dieta mediterránea y ofrece la posibilidad de llevar a cabo hábitos saludables y deportivos. Cuenta con amplios espacios verdes y playas en las que relajarse y desconectar al aire libre, así como con una amplia gama de opciones culturales, gastronómicas y comerciales, que ayudarán a hacer más llevadera la estancia tanto de los pacientes como de sus acompañantes.",
+                text: "València ha creado la marca València Medical Destination, un programa destinado a posicionar la ciudad como destino de turismo de salud y bienestar. A través de esta iniciativa, llevada a cabo por la Fundación Visit València, entidad responsable de la promoción turística de la ciudad, se pretende dar visibilidad a la calidad de la oferta sanitaria y de bienestar y las ventajas que ofrece el destino para los pacientes que buscar tratarse fuera de su país. Además de ser el destino ideal por su importante ecosistema de empresas de biotecnología y servicios, València lo es por su climatología, por sus conexiones -la ciudad está conectada con 90 aeropuertos- y por su amplia oferta hotelera y de espacios para el bienestar y el entretenimiento. Esta urbe ofrece todas las ventajas de una gran ciudad, pero con un tamaño accesible y con precios competitivos, algo a tener muy en cuenta en caso de estancias medias o largas por motivos de tratamientos que requieran una permanencia prolongada.",
             },
             {
                 id: 6,
@@ -112,7 +112,7 @@ export const esData = {
                 id: 15,
                 cover: "/assets/net-1.png",
                 category: "Networking",
-                title: "Cambiar es posible",
+                title: "El poder del cambio: Cómo una actitud determinada puede transformar tu vida",
                 text: "Cuando una persona realmente quiere cambiar su vida, puede hacerlo. Y el coaching es, sencillamente, una herramienta para conseguir ese objetivo. Recientemente, una persona a la que le hice un proceso de coaching, hace un año y medio, me dijo: “Me ayudaste mucho”. Cuando iniciamos el proceso, acababa de tomar la decisión de dejar su trabajo, como consecuencia de una situación de estrés sostenido en el tiempo que no supo gestionar y que le llevó, incluso, a enfermar. Entonces, decidió formarse en el área de Recursos Humanos, con el objetivo de reorientar su carrera profesional hacia ese campo. Su objetivo era ser una segunda versión de ella misma y, cuando nos reencontramos, me dijo: “¡Lo he conseguido!”. “¿Y qué has hecho para conseguirlo?”, le pregunté. Ella me contestó: “Cambiar yo. He cambiado mucho para ser mejor persona y para sobrevivir; y el proceso de coaching me ayudó mucho”. Muchas veces los coachs nos quedamos con la duda de si habremos ayudado a nuestro cliente en su deseo de transformación y mi reflexión, fruto de mi experiencia, es que aquellas personas que quieren cambiar, lo consiguen. Arantza Ríos. Profesora. IE Business School, http://www.ie.edu/",
             },
             {
@@ -165,6 +165,49 @@ export const esData = {
                 text: "Hay un lugar en Valencia en el que el tiempo se detiene para dar paso a los sueños. Una puerta abierta al fascinante mundo de la porcelana. Un lugar donde podrá conocer los procesos artesanales únicos que dan vida a las emblemáticas piezas de Lladró. En 1953 los hermanos Lladró empezaron a cocer sus primeras creaciones en un horno moruno construido en el patio de su casa natal, en Almàssera, un pueblo de la huerta valenciana. Hoy, más de sesenta años después, y muy cerca de donde instalaron aquel rudimentario taller, en Tavernes Blanques, se encuentra la sede central y la única fábrica de Lladró en el mundo, donde se produce el 100% de las creaciones Lladró. Más que una fábrica convencional, Lladró es un gran taller de artesanos. Un espacio concebido para la creación artística, con luminosos estudios y talleres. Lladró es una marca española líder mundial en el diseño, fabricación y distribución de una amplia gama de creaciones de porcelana artística.",
             },
 
+        ],
+        popular: [
+
+            {
+                id: 16,
+                icon: "/assets/1.svg",
+                cover: "/assets/d-2.png",
+                category: "Sport",
+                title: "España, paraíso para los golfistas",
+                text: "Como resulta, la patria de Don Quijote puede ofrecer todo lo que desee Usted. Aquí cada uno podrá encontrar la diversión a su gusto. Si le gusta el golf, o es un jugador profesional, o simplemente un aficionado, en cualquier caso, Usted debe “probar” los campos de golf españoles. España es uno de los países europeos que ocupa una posición de liderazgo cuando se trata de un juego de golf. Cada año, miles de personas eligen España como una cancha de golf principal. Hay una serie de razones por las que este país se goza de tan gran popularidad entre los amantes del golf.",
+            },
+            {
+                id: 19,
+                icon: "/assets/2.svg",
+                cover: "/assets/f-2.png",
+                category: "Finanzas & Leyes",
+                title: "¿Cómo enseñar a tus hijos a gestionar bien su dinero?",
+                text: "Es importante que los padres inculquen habilidades financieras a sus hijos desde que son capaces de comprender algunos conceptos básicos. Esto les ayudará a que el día de mañana, puedan tomar buenas decisiones. En España sigue siendo tabú hablar de dinero tanto con familiares y amigos como con compañeros de trabajo, ya sea por desconocimiento o inseguridad, evitamos los temas de conversación relacionados con nuestras finanzas. Pero el dinero es algo presente en nuestro día a día y contar con una buena cultura financiera nos ayudará a afrontar las diferentes situaciones que se puedan dar en nuestra vida. Para ello, es fundamental empezar a hablar el dinero de forma natural, empezando en casa con nuestros hijos.",
+            },
+            {
+                id: 15,
+                icon: "/assets/3.svg",
+                cover: "/assets/net-1.png",
+                category: "Networking",
+                title: "Cambiar es posible",
+                text: "Cuando una persona realmente quiere cambiar su vida, puede hacerlo. Y el coaching es, sencillamente, una herramienta para conseguir ese objetivo. Recientemente, una persona a la que le hice un proceso de coaching, hace un año y medio, me dijo: “Me ayudaste mucho”. Cuando iniciamos el proceso, acababa de tomar la decisión de dejar su trabajo, como consecuencia de una situación de estrés sostenido en el tiempo que no supo gestionar y que le llevó, incluso, a enfermar. Entonces, decidió formarse en el área de Recursos Humanos, con el objetivo de reorientar su carrera profesional hacia ese campo. Su objetivo era ser una segunda versión de ella misma y, cuando nos reencontramos, me dijo: “¡Lo he conseguido!”. “¿Y qué has hecho para conseguirlo?”, le pregunté. Ella me contestó: “Cambiar yo. He cambiado mucho para ser mejor persona y para sobrevivir; y el proceso de coaching me ayudó mucho”. Muchas veces los coachs nos quedamos con la duda de si habremos ayudado a nuestro cliente en su deseo de transformación y mi reflexión, fruto de mi experiencia, es que aquellas personas que quieren cambiar, lo consiguen. Arantza Ríos. Profesora. IE Business School, http://www.ie.edu/",
+            },
+            {
+                id: 1,
+                icon: "/assets/4.svg",
+                cover: "/assets/f-1.png",
+                category: "Finanzas & Leyes",
+                title: "La tecnología impulsa la revolución de las finanzas descentralizadas",
+                text: "La tecnología está impulsando un sistema financiero basado en “blockchain” que podría dejar fuera de juego a los delincuentes y especuladores en la sombra. Aún es un mercado de nicho, de cierto riesgo para inversores privados. Pero podemos crear entre todos un mundo mejor. El hundimiento reciente de la popular plataforma de intercambio de criptomonedas FTX ha intensificado una muy importante guerra política y económica por las finanzas descentralizadas, que viene arrastrándose desde hace años y aún tiene mucho recorrido por delante, porque los intereses en juego son colosales. Lo que nos estamos jugando es nada menos que la libertad financiera, obligando a la banca tradicional a reinventarse o desaparecer. También estamos cortando el paso al capitalismo salvaje que se ha instalado en un mundo financiero ponzoñoso, con una deriva que puede ser letal.",
+            },
+            {
+                id: 6,
+                icon: "/assets/5.svg",
+                cover: "/assets/t-1.png",
+                category: "Turismo",
+                title: "¡Descubre la Costa Blanca!",
+                text: "Todo viaje provoca un momento mágico. En la Costa Blanca, ese instante en el que el viajero siente una especie de revelación puede producirse en muchos momentos y lugares como municipios, playas, calas, cumbres prelitorales… Su majestuosa belleza y el sol infalible hacen de la Costa Blanca un paraíso a tiempo completo. El equipo de National Geographic Rusia, avalado por muchos años de experiencia en la grabación de documentales de todos los formatos, junto al equipo de Impuls PLUS, especializado en marketing, crearán un vídeo personalizado capaz de resaltar la imagen y singularidad de tu destino y lo transmitirán al público de una manera atractiva. ¡No pierdas la oportunidad de trabajar con unos de los mejores expertos del mundo audiovisual! Recuerda que los contenidos en vídeo son, hoy en día, la clave del éxito en las redes sociales, páginas web y otras plataformas digitales",
+            },
         ]
     },
     footer: {
