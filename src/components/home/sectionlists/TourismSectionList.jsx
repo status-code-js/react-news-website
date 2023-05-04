@@ -1,11 +1,15 @@
 import React from 'react';
 import TourismSection from "../sections/TourismSection";
+import { useTranslation } from 'react-i18next';
 
 const TourismSectionList = ( { items }) => {
+    const { t } = useTranslation();
     return (
         <div className="flex flex-col md:m-0 md:m-auto">
             <div>
-                <h4 className="font-plus text-sm uppercase text-color5 font-normal">Turismo</h4>
+                <h4 className="font-plus text-sm uppercase text-color5 font-normal">
+                    {t('main.categories.category.tourism')}
+                </h4>
                 <div className="bg-color5 h-px w-full"></div>
             </div>
             <div>

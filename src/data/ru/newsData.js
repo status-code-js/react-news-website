@@ -34,7 +34,7 @@ export const ruData = {
             {
                 id: 4,
                 cover: "/assets/n-1.png",
-                category: "Cultura de Negocios",
+                category: "Деловая культура",
                 title: "myHomeDesign: “Если у вас есть мечта, не позволяйте никому говорить вам, что вы не можете ее осуществить”",
                 text: "En myHomeDesign disfrutamos haciendo realidad los sueños de nuestros clientes”, afirman los responsables de esta veterana firma dedicada al sector de la construcción y el diseño de proyectos de interiorismo.Además de reformar y dotar espacios de un nuevo aspecto, sus propuestas de interiorismo buscan sorprender a quienes requieren un enfoque atrevido, diferente, que emocione y sea capaz de transmitir las sensaciones que les demandan y que todo hogar debe tener. Les avalan más de veinte años en el sector de la construcción y en el diseño de proyectos de interiorismo, habiendo realizado obras a lo largo de las provincia de Alicante y Murcia.",
             },
@@ -83,7 +83,7 @@ export const ruData = {
             {
                 id: 11,
                 cover: "/assets/hero-2.png",
-                category: "Cultura de Negocios",
+                category: "Деловая культура",
                 title: "Cloudworks: ¡encuentra tu espacio de coworking en Madrid!",
                 text: "Encontrar un sitio diseñado para el trabajo que permita generar sinergias y disfrutar de un ambiente propicio para las ideas es algo importante para cualquier freelance o emprendedor. Los espacios de coworking se han convertido en la principal alternativa cuando se necesita un espacio flexible y acondicionado para crear una oficina propia. Cloudworks es un espacio de coworking en Madrid que ha logrado situarse entre los más interesantes de la capital. En sus instalaciones, startups y freelances encuentran el espacio que necesitan para sacar adelante sus proyectos y empresas en fases de crecimiento.",
             },
@@ -164,8 +164,18 @@ export const ruData = {
                 title: "Lladró - откройте для себя волшебный мир фарфора",
                 text: "В Валенсии есть место, где время останавливается, уступая место мечтам. Открытая дверь в увлекательный мир фарфора. Место, где вы можете узнать об уникальных ремесленных процессах, которые дают жизнь знаковым изделиям Lladró. В 1953 году братья Льядро начали обжигать свои первые творения в мавританской печи, построенной во внутреннем дворе их дома в Альмассере, городке в валенсийском саду. Сегодня, более шестидесяти лет спустя, и очень близко к тому месту, где они открыли эту рудиментарную мастерскую, в Таверн-Бланке, находится штаб-квартира и единственная фабрика Lladró в мире, на которой производится 100% продукции Lladró. Lladró – это больше, чем обычная фабрика, мастерская великого мастера. Пространство, предназначенное для художественного творчества, с яркими студиями и мастерскими. Lladró — ведущий мировой испанский бренд в области дизайна, производства и распространения широкого ассортимента художественных изделий из фарфора.",
             },
-        ]
-        ,
+        ],
+        categories: {
+            "category.finance": "Финансы и право",
+            "category.gastronomy": "Гастрономия",
+            "category.business": "Деловая культура",
+            "category.tourism": "Туризм",
+            "category.health": "Здоровье",
+            "category.sport": "Спорт",
+            "category.networking": "Networking",
+            "category.education": "Образование",
+            "category.trends": "Тенденции и мода"
+        },
         popular: [
 
             {

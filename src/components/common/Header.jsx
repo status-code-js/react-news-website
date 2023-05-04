@@ -29,16 +29,16 @@ function Header(props) {
         currentLanguage === 'es' ? 'ES' : currentLanguage.toUpperCase();
 
     const links = [
-        {text: 'Finanzas & Leyes', url: '/finanzas'},
-        {text: 'Gastronomía', url: '/gastronomía'},
-        {text: 'Educación', url: '/educación'},
-        {text: 'Cultura de Negocios', url: '/negocios'},
-        {text: 'Salud', url: '/salud'},
-        {text: 'Networking', url: '/networking'},
-        {text: 'Deporte', url: '/deporte'},
-        {text: 'Turismo', url: '/turismo'},
-        {text: 'Tendencias & Moda', url: '/tendencias'},
-    ]
+        { text: t('main.categories.category.finance'), url: '/finanzas' },
+        { text: t('main.categories.category.gastronomy'), url: '/gastronomía' },
+        { text: t('main.categories.category.education'), url: '/educación' },
+        { text: t('main.categories.category.business'), url: '/negocios' },
+        { text: t('main.categories.category.health'), url: '/salud' },
+        { text: t('main.categories.category.networking'), url: '/networking' },
+        { text: t('main.categories.category.sport'), url: '/deporte' },
+        { text: t('main.categories.category.tourism'), url: '/turismo' },
+        { text: t('main.categories.category.trends'), url: '/tendencias' },
+    ];
 
     const rotateArrow = () => {
         setArrowRotation(rotation => rotation + 180)
@@ -87,7 +87,7 @@ function Header(props) {
                             <div className="max-w-4xl m-0 m-auto px-4 top-9 grid grid-cols-3 sm:grid-cols-1 gap-4 p-6 text-center">
                             {links.map((link) => (
                                 <Link to={link.url} className="font-sans text-sm font-semibold leading-7 ease-in-out duration-200 hover:opacity-80" onClick={() => {setShowMenu(!showMenu)}}>
-                                {link.text}
+                                    {t(link.text)}
                                 </Link>
                             ))}
                             </div>
@@ -121,7 +121,7 @@ function Header(props) {
         <ul style={{display: showMobileMenu ? 'block' : 'none'}} className="flex-col text-center leading-7 py-8">
             <li><a>{t("header.menu.link1")}</a></li>
             <li><a>{t("header.menu.link2")}</a></li>
-            <li><a>{t("header.menu.link3")}</a></li>
+            <li><a>{t("header.menu.link1")}</a></li>
         </ul>
     </div>
     </div>

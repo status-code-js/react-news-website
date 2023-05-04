@@ -35,7 +35,7 @@ export const enData = {
             {
                 id: 4,
                 cover: "/assets/n-1.png",
-                category: "Cultura de Negocios",
+                category: "Business Culture",
                 title: "myHomeDesign: “If you have a dream, don't let anyone tell you that you can't achieve it”",
                 text: "En myHomeDesign disfrutamos haciendo realidad los sueños de nuestros clientes”, afirman los responsables de esta veterana firma dedicada al sector de la construcción y el diseño de proyectos de interiorismo.Además de reformar y dotar espacios de un nuevo aspecto, sus propuestas de interiorismo buscan sorprender a quienes requieren un enfoque atrevido, diferente, que emocione y sea capaz de transmitir las sensaciones que les demandan y que todo hogar debe tener. Les avalan más de veinte años en el sector de la construcción y en el diseño de proyectos de interiorismo, habiendo realizado obras a lo largo de las provincia de Alicante y Murcia.",
             },
@@ -84,7 +84,7 @@ export const enData = {
             {
                 id: 11,
                 cover: "/assets/hero-2.png",
-                category: "Cultura de Negocios",
+                category: "Business Culture",
                 title: "Cloudworks: ¡encuentra tu espacio de coworking en Madrid!",
                 text: "Encontrar un sitio diseñado para el trabajo que permita generar sinergias y disfrutar de un ambiente propicio para las ideas es algo importante para cualquier freelance o emprendedor. Los espacios de coworking se han convertido en la principal alternativa cuando se necesita un espacio flexible y acondicionado para crear una oficina propia. Cloudworks es un espacio de coworking en Madrid que ha logrado situarse entre los más interesantes de la capital. En sus instalaciones, startups y freelances encuentran el espacio que necesitan para sacar adelante sus proyectos y empresas en fases de crecimiento.",
             },
@@ -166,6 +166,17 @@ export const enData = {
                 text: "There is a place in Valencia where time stops to give way to dreams. An open door to the fascinating world of porcelain. A place where you can learn about the unique craft processes that give life to the emblematic pieces of Lladró. In 1953 the Lladró brothers began to fire their first creations in a Moorish oven built in the patio of their home in Almàssera, a town in the Valencian orchard. Today, more than sixty years later, and very close to where they set up that rudimentary workshop, in Tavernes Blanques, is the headquarters and the only Lladró factory in the world, where 100% of Lladró creations are produced. More than a conventional factory, Lladró is a great craftsman's workshop. A space conceived for artistic creation, with bright studios and workshops. Lladró is a world leading Spanish brand in the design, manufacture and distribution of a wide range of artistic porcelain creations.",
             },
         ],
+        categories: {
+            "category.finance": "Finance and Law",
+            "category.gastronomy": "Gastronomy",
+            "category.business": "Business Culture",
+            "category.tourism": "Tourism",
+            "category.health": "Health",
+            "category.sport": "Sport",
+            "category.networking": "Networking",
+            "category.education": "Education",
+            "category.trends": "Trends and Fashion"
+        },
         popular: [
 
             {

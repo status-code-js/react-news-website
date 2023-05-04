@@ -166,6 +166,17 @@ export const esData = {
             },
 
         ],
+        categories: {
+            "category.finance": "Finanzas",
+            "category.gastronomy": "Gastronomía",
+            "category.business": "Cultura de Negocios",
+            "category.tourism": "Turismo",
+            "category.health": "Salud",
+            "category.sport": "Deporte",
+            "category.networking": "Networking",
+            "category.education": "Educación",
+            "category.trends": "Tendencias & Moda"
+        },
         popular: [
 
             {
