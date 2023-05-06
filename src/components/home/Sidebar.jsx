@@ -1,21 +1,41 @@
 import React, { useState } from "react";
 import BannerAdsSmall from "../common/BannerAdsSmall";
 import Button from "../common/Button";
-import { popular } from "../../data/es/newsData";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import { esData } from "../../data/es/newsData";
+import { ruData } from "../../data/ru/newsData";
+import { enData } from "../../data/en/newsData";
 
-function Sidebar({ item }) {
+
+function Sidebar() {
   const [activeId, setActiveId] = useState(null);
+
+  const { t, i18n } = useTranslation();
 
   const handleHover = (id) => {
     setActiveId(id);
   };
+  const getPopular = () => {
+    const currentLanguage = i18n.language;
+    switch(currentLanguage) {
+      case 'ru':
+        return ruData.main.sidebar.popular;
+      case 'en':
+        return enData.main.sidebar.popular;
+      default:
+        return esData.main.sidebar.popular;
+    }
+  }
+
+  const popular = getPopular();
+
 
   return (
       <div>
         <div className="flex flex-col xl:hidden w-72 lg:w-60 mt-4 mb-4 pr-4 xl:pl-4">
           <div className="border-t border-b">
-            <h3 className="text-lg font-bold py-1 font-plus">Lo más leído</h3>
+            <h3 className="text-lg font-bold py-1 font-plus">{t("main.sidebar.text3")}</h3>
           </div>
           <div className="flex flex-col gap-y-1 mt-4 mb-4">
             {popular.map((item, index) => {
@@ -57,9 +77,9 @@ function Sidebar({ item }) {
           </div>
           <BannerAdsSmall />
           <div className="font-plus px-1 mt-4 mb-4">
-            <h3 className="text-lg font-bold pb-2">Suscríbete a la revista Impuls</h3>
+            <h3 className="text-lg font-bold pb-2">{t("main.sidebar.text1")}</h3>
             <p className="text-xs max-w-282">
-              Un boletín semanal de primicias, análisis e información exclusiva sobre lo que está sucediendo en la Comunidad Valenciana y más allá del equipo de informes
+              {t("main.sidebar.text2")}
             </p>
           </div>
           <Button />

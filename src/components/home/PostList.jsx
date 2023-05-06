@@ -14,17 +14,17 @@ import FinanceSectionList from "./sectionlists/FinanceSectionList";
 import TrendsSectionList from "./sectionlists/TrendsSectionList";
 
 
-
 const PostList = ({ currentLanguage }) => {
 
     const [items, setItems] = useState([])
+
 
     useEffect(() => {
         setItems(posts)
     }, [])
 
-
-
+    
+    
     return (
         <div className="max-w-7xl border border-t-0 border-color4 xl:border-0 m-0 m-auto pt-4 pb-4 xl:pb-0">
             <div className="px-4">

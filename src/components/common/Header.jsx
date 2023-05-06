@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import {Link} from "react-router-dom";
 import { useTranslation } from 'react-i18next'
+
 
 function Header(props) {
 
@@ -11,6 +12,7 @@ function Header(props) {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
     const [showDesktopMenu, setShowDesktopMenu] = useState(false)
     const [showCrossIcon, setShowCrossIcon] = useState(false)
+    const menuRef = useRef();
 
     const toggleLanguage = () => {
         let nextLanguage = '';
@@ -52,10 +54,28 @@ function Header(props) {
 
     const mobileMenuIconClass = `mobile-menu__icon ${showCrossIcon ? 'cross-icon' : ''}`;
 
+    const ref = useRef(null);
+
+    const handleClickOutside = (event) => {
+        if (ref.current && !ref.current.contains(event.target)) {
+            setShowMenu(false);
+            setArrowRotation(0);
+            setShowMobileMenu(false);
+            setShowCrossIcon(false)
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
 
 
   return (
-    <div className="text-color1">
+    <div className="text-color1" ref={ref}>
         <div className="bg-color2 pt-2 pb-2">
             <div className="max-w-7xl m-0 m-auto px-4">
              <div className="flex justify-between items-center w-full" >
@@ -114,14 +134,15 @@ function Header(props) {
                     </li>
                     <li className="hidden sm:block"><button onClick={changeMenu}>
                         <img src={`${process.env.PUBLIC_URL}/assets/${showCrossIcon ? 'mobile-menu__cross.png' : 'mobile-menu__icon.svg'}`} alt="" className="w-7"/>
-                    </button></li>
+                    </button>
+                    </li>
                 </ul>
             </div>
         </div>
         <ul style={{display: showMobileMenu ? 'block' : 'none'}} className="flex-col text-center leading-7 py-8">
             <li><a>{t("header.menu.link1")}</a></li>
             <li><a>{t("header.menu.link2")}</a></li>
-            <li><a>{t("header.menu.link1")}</a></li>
+            <li><a>{t("header.menu.link3")}</a></li>
         </ul>
     </div>
     </div>
