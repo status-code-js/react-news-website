@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import {posts} from '../../data/es/newsData'
+import { esData } from '../../data/es/newsData';
+import { ruData } from '../../data/ru/newsData';
+import { enData } from '../../data/en/newsData';
 import BannerAds from "../common/BannerAds";
 import Sidebar from "./Sidebar";
 import HeroSectionList from "./sectionlists/HeroSectionList";
@@ -20,7 +22,18 @@ const PostList = ({ currentLanguage }) => {
 
 
     useEffect(() => {
-        setItems(posts)
+        switch(currentLanguage) {
+            case "es":
+                setItems(esData.main.posts);
+                break;
+            case "ru":
+                setItems(ruData.main.posts);
+                break;
+            case "en":
+            default:
+                setItems(enData.main.posts);
+                break;
+        }
     }, [])
 
     
