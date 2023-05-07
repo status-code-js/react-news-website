@@ -34,6 +34,9 @@ function App() {
                     <Header currentLanguage={currentLanguage} changeLanguage={changeLanguage} />
                     <Routes>
                         <Route path='/' element={<PostList posts={posts} currentLanguage={currentLanguage} changeLanguage={changeLanguage} />} />
+                        <Route path='/es' element={<PostList posts={posts} currentLanguage='es' changeLanguage={changeLanguage} />} />
+                        <Route path='/ru' element={<PostList posts={posts} currentLanguage='ru' changeLanguage={changeLanguage} />} />
+                        <Route path='/en' element={<PostList posts={posts} currentLanguage='en' changeLanguage={changeLanguage} />} />
                         <Route path='/post/:postId' element={<Post posts={posts} />} />
                     </Routes>
                     <Footer changeLanguage={changeLanguage} />

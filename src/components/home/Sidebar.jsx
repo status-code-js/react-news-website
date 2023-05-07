@@ -55,10 +55,10 @@ function Sidebar() {
                       <ul>
                         <li className="flex gap-3">
                           <div className={`w-7 h-7 flex items-center justify-center rounded-full font-bold ${
-                          isActive ? "text-color7" : "text-color5"
+                              isActive ? "text-color7" : "text-color5"
                           }`}
-                          style={{ backgroundColor: "currentcolor" }}
-                            >
+                               style={{ backgroundColor: "currentcolor" }}
+                          >
                             <span className="text-color1 w-7 h-7 flex justify-center items-center">{index + 1}</span>
                           </div>
                           <h2
